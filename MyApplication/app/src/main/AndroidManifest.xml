@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.bigserj.homework1">
+    package="com.android.bigserj">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="homework1"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <!--  -->
+        <!-- говорим что за активити main и пишем что внутри -->
+        <activity android:name="com.android.bigserj.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- просто говорим (декларируем) что есть такой активити с дз1 -->
+        <activity android:name="com.android.bigserj.homework1.MainActivity"/>
+        <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
+
+
+
     </application>
 
 </manifest>

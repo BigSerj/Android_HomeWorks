@@ -1,0 +1,13 @@
+<resources>
+    <!-- HomeWork1 -->
+    <string name="text_view">Text 1</string>
+    <string name="hello_world">Text 2</string>
+    <string name="ok_button">Button</string>
+
+    <!-- ClassWork2 -->
+    <string name="dz1">DZ1</string>
+    <string name="name">Name</string>
+    <string name="button">Login</string>
+
+
+</resources>

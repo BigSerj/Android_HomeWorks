@@ -3,13 +3,20 @@ package com.android.bigserj.homework1;
 import android.app.Activity;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
+import android.support.annotation.StringDef;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.bigserj.R;
+
 
 public class MainActivity extends Activity implements View.OnClickListener{
+
+    public static final String KEY_USERNAME = "KEY_USERNAME";
+    public static final String KEY_PASSWORD = "KEY_PASSWORD";
+
 
     private Button okButton;
     private TextView text1;
@@ -34,13 +41,20 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_hw2);
         Log.d("MainActivity","onCreate()"); // d - debug.
+
 
         okButton = (Button)findViewById(R.id.ok_button);
         text1 = (TextView)findViewById(R.id.textView);
         text2 = (TextView)findViewById(R.id.textView2);
 
+
+        String userName = getIntent().getStringExtra(KEY_USERNAME);
+        String password = getIntent().getStringExtra(KEY_PASSWORD);
+
+        text1.setText(userName);
+        text2.setText(password);
 
         // кнопка Ок
         okButton.setOnClickListener(listener);
