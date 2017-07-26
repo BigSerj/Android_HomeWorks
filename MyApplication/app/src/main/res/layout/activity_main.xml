@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7591ff"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:background="#edff75"
+        android:textColor="#ff0004"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ddff75"
+        android:textColor="#ff0400"
+        android:text="@string/hello_world"
+        android:layout_weight="0.03" />
+
+
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="#ff75a1"
+        android:textColor="#000000"
+        android:text="@string/ok_button" />
+
+
+</LinearLayout>
