@@ -3,7 +3,6 @@ package com.android.bigserj.homework1;
 import android.app.Activity;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
-import android.support.annotation.StringDef;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -41,12 +40,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hw2);
+        setContentView(R.layout.activity_hw1);
         Log.d("MainActivity","onCreate()"); // d - debug.
 
 
         okButton = (Button)findViewById(R.id.ok_button);
-        text1 = (TextView)findViewById(R.id.textView);
+        text1 = (TextView)findViewById(R.id.textView1);
         text2 = (TextView)findViewById(R.id.textView2);
 
 

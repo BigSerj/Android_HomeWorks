@@ -3,5 +3,17 @@
 
     <dimen name="classwork2_start_end_padding">40dp</dimen>
 
+    <!-- HomeWork2 -->
+    <dimen name="homework2_width">150dp</dimen>
+    <dimen name="homework2_height">90dp</dimen>
+    <dimen name="homework2_marginBottom">10dp</dimen>
+    <dimen name="homework2_marginTop">10dp</dimen>
+    <dimen name="homework2_paddingStart">70dp</dimen>
+    <dimen name="homework2_paddingEnd">70dp</dimen>
+    <dimen name="homework2_height_thailand_white">60dp</dimen>
+    <dimen name="homework2_height_thailand_blue">30dp</dimen>
+    <dimen name="homework2_height_Denmark_thickness">15dp</dimen>
+    <dimen name="homework2_height_Denmark_marginStart">40dp</dimen>
+
 
 </resources>

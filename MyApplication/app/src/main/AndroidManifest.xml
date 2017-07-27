@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="homework1"
+        android:label="Main project"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -20,6 +20,7 @@
         </activity>
         <!-- просто говорим (декларируем) что есть такой активити с дз1 -->
         <activity android:name="com.android.bigserj.homework1.MainActivity"/>
+        <activity android:name="com.android.bigserj.homeWork2.HomeWork2Activity"/>
         <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
 
 

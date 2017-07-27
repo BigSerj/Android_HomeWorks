@@ -28,8 +28,8 @@ public class ClassWork2Activity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClassWork2Activity.this,com.android.bigserj.homework1.MainActivity.class);
-                intent.putExtra(MainActivity.KEY_USERNAME,username.getText());
-                intent.putExtra(MainActivity.KEY_PASSWORD,password.getText());
+                intent.putExtra(MainActivity.KEY_USERNAME,username.getText().toString());
+                intent.putExtra(MainActivity.KEY_PASSWORD,password.getText().toString());
                 startActivity(intent);
             }
         });

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/homework2_marginBottom"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/homework2_paddingEnd"
+        android:paddingStart="@dimen/homework2_paddingStart">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorRed" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/flag_Poland"
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/flag_Poland1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Poland2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flag_Italy"
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/flag_Italy1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorGreen"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Italy2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Italy3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flag_Columbia"
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop"
+            android:orientation="vertical"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:id="@+id/flag_Columbia1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorYellow"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Columbia2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/colorBlue"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Columbia3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/colorDarkRed"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flag_Madagascar"
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/flag_Madagascar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/flag_Madagascar12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/flag_Madagascar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorRed"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/flag_Madagascar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorDarkGreen"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkRed" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homework2_height_thailand_white"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homework2_height_thailand_blue"
+                android:layout_gravity="center"
+                android:background="@color/colorBlue" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="@dimen/homework2_width"
+            android:layout_height="@dimen/homework2_height"
+            android:layout_marginBottom="@dimen/homework2_marginBottom"
+            android:layout_marginTop="@dimen/homework2_marginTop">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkRed" />
+
+            <View
+                android:layout_width="@dimen/homework2_height_Denmark_thickness"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/homework2_height_Denmark_marginStart"
+                android:background="@color/colorWhite" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/homework2_height_Denmark_thickness"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>
