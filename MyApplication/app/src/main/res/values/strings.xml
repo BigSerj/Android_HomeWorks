@@ -9,7 +9,11 @@
     <string name="name">Name</string>
     <string name="button">Login</string>
     <string name="cw2">cw2</string>
+    <string name="cw3">cw3</string>
     <string name="dz2">dz2</string>
+    <string name="hw3">hw3</string>
+    <string name="url">https://goo.gl/oaZVyX</string>
+    <string name="strangebutton">strangeButton</string>
 
 
 </resources>

@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.android.bigserj.R;
+import com.android.bigserj.classWork3.ClassWork3Activity;
 import com.android.bigserj.classwork2.ClassWork2Activity;
 import com.android.bigserj.homeWork2.HomeWork2Activity;
+import com.android.bigserj.homeWork3.HomeWork3Activity;
 
 
 public class MainActivity extends Activity{
@@ -41,6 +43,22 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HomeWork2Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw3Button = (Button)findViewById(R.id.cw3_button);
+        cw3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork3Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw3Button = (Button)findViewById(R.id.hw3_button);
+        hw3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork3Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

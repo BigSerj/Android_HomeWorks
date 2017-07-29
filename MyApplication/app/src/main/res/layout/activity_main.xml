@@ -23,5 +23,17 @@
         android:layout_height="40dp"
         android:text="@string/dz2" />
 
+    <Button
+        android:id="@+id/cw3_button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="@string/cw3" />
+
+    <Button
+        android:id="@+id/hw3_button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="@string/hw3" />
+
 
 </LinearLayout>
