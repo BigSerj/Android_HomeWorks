@@ -10,7 +10,8 @@
         android:label="Main project"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".homeWork3.LeakCanaryTest">
         <!--  -->
         <!-- говорим что за активити main и пишем что внутри -->
         <activity android:name="com.android.bigserj.main.MainActivity">
