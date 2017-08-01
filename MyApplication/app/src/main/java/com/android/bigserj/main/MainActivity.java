@@ -8,11 +8,14 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.bigserj.ClassWork4.ClassWork4Activity;
 import com.android.bigserj.R;
 import com.android.bigserj.classWork3.ClassWork3Activity;
 import com.android.bigserj.classwork2.ClassWork2Activity;
 import com.android.bigserj.homeWork2.HomeWork2Activity;
 import com.android.bigserj.homeWork3.HomeWork3Activity;
+import com.android.bigserj.homeWork4.AnalogClocksActivity;
+import com.android.bigserj.homeWork4.HomeWork4Activity;
 
 
 public class MainActivity extends Activity{
@@ -62,7 +65,23 @@ public class MainActivity extends Activity{
                 startActivity(intent);
             }
         });
-
+        Button cw4Button = (Button)findViewById(R.id.cw4_button);
+        cw4Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork4Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw4Button = (Button)findViewById(R.id.hw4_button);
+        hw4Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork4Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+                overridePendingTransition(R.anim.diagonaltranslate,R.anim.alpha);
+            }
+        });
 
     }
 

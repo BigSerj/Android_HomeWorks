@@ -12,8 +12,11 @@
     <string name="cw3">cw3</string>
     <string name="dz2">dz2</string>
     <string name="hw3">hw3</string>
+    <string name="hw4">hw4</string>
     <string name="url">https://goo.gl/oaZVyX</string>
     <string name="strangebutton">strangeButton</string>
+    <string name="cw4">cw4</string>
+    <string name="clocks">Clocks</string>
 
 
 </resources>

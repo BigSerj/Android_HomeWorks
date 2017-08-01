@@ -3,6 +3,8 @@
     package="com.android.bigserj">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -25,6 +27,9 @@
         <activity android:name="com.android.bigserj.homework1.MainActivity"/>
         <activity android:name="com.android.bigserj.homeWork2.HomeWork2Activity"/>
         <activity android:name="com.android.bigserj.homeWork3.HomeWork3Activity"/>
+        <activity android:name="com.android.bigserj.homeWork4.HomeWork4Activity"/>
+        <activity android:name="com.android.bigserj.homeWork4.AnalogClocksActivity"/>
+        <activity android:name="com.android.bigserj.ClassWork4.ClassWork4Activity"/>
         <activity android:name="com.android.bigserj.classWork3.ClassWork3Activity"/>
         <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
 

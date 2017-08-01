@@ -1,39 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_button_size_y"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/dz1_button"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:text="@string/dz1" />
+        <Button
+            android:id="@+id/dz1_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/dz1" />
 
-    <Button
-        android:id="@+id/cw2_button"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:text="@string/cw2" />
+        <Button
+            android:id="@+id/cw2_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw2" />
 
-    <Button
-        android:id="@+id/dz2_button"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:text="@string/dz2" />
+        <Button
+            android:id="@+id/dz2_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/dz2" />
 
-    <Button
-        android:id="@+id/cw3_button"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:text="@string/cw3" />
+        <Button
+            android:id="@+id/cw3_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw3" />
 
-    <Button
-        android:id="@+id/hw3_button"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:text="@string/hw3" />
+        <Button
+            android:id="@+id/hw3_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/hw3" />
+
+        <Button
+            android:id="@+id/cw4_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_button_size_y"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hw4_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/hw4" />
+
+    </LinearLayout>
 
 
 </LinearLayout>
