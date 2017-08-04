@@ -58,6 +58,18 @@
             android:layout_height="@dimen/main_button_size_y"
             android:text="@string/hw4" />
 
+        <Button
+            android:id="@+id/cw5_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw5" />
+
+        <Button
+            android:id="@+id/hw5_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/hw5" />
+
     </LinearLayout>
 
 

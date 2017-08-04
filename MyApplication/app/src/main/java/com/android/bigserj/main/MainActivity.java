@@ -9,12 +9,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.android.bigserj.ClassWork4.ClassWork4Activity;
+import com.android.bigserj.ClassWork5.ClassWork5Activity;
+import com.android.bigserj.homeWork5.HomeWork5Activity;
 import com.android.bigserj.R;
 import com.android.bigserj.classWork3.ClassWork3Activity;
 import com.android.bigserj.classwork2.ClassWork2Activity;
 import com.android.bigserj.homeWork2.HomeWork2Activity;
 import com.android.bigserj.homeWork3.HomeWork3Activity;
-import com.android.bigserj.homeWork4.AnalogClocksActivity;
 import com.android.bigserj.homeWork4.HomeWork4Activity;
 
 
@@ -80,6 +81,22 @@ public class MainActivity extends Activity{
                 Intent intent = new Intent(MainActivity.this, HomeWork4Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
                 overridePendingTransition(R.anim.diagonaltranslate,R.anim.alpha);
+            }
+        });
+        Button cw5Button = (Button)findViewById(R.id.cw5_button);
+        cw5Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork5Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw5Button = (Button)findViewById(R.id.hw5_button);
+        hw5Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork5Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
             }
         });
 

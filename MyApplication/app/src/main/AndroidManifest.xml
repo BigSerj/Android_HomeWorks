@@ -29,10 +29,32 @@
         <activity android:name="com.android.bigserj.homeWork3.HomeWork3Activity"/>
         <activity android:name="com.android.bigserj.homeWork4.HomeWork4Activity"/>
         <activity android:name="com.android.bigserj.homeWork4.AnalogClocksActivity"/>
+        <activity android:name="com.android.bigserj.homeWork5.HomeWork5Activity"/>
+        <activity android:name="com.android.bigserj.ClassWork5.ClassWork5Activity"/>
         <activity android:name="com.android.bigserj.ClassWork4.ClassWork4Activity"/>
         <activity android:name="com.android.bigserj.classWork3.ClassWork3Activity"/>
         <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
 
+
+
+        <!--<receiver android:name=".ClassWork5.MyBroadcastReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>-->
+                <!--&lt;!&ndash;<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>&ndash;&gt;-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <service android:name=".ClassWork5.MyService"/>
+        <service android:name=".ClassWork5.MyIntentService"/>
+
+
+        <receiver android:name=".homeWork5.MyBroadcastReceiverHomeWork5">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".homeWork5.MyServiceHomeWork5"/>
 
 
     </application>
