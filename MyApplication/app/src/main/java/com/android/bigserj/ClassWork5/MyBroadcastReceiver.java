@@ -1,4 +1,4 @@
-package com.android.bigserj.ClassWork5;
+package com.android.bigserj.classWork5;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

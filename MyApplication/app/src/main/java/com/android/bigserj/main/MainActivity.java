@@ -8,8 +8,9 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-import com.android.bigserj.ClassWork4.ClassWork4Activity;
-import com.android.bigserj.ClassWork5.ClassWork5Activity;
+import com.android.bigserj.classWork4.ClassWork4Activity;
+import com.android.bigserj.classWork5.ClassWork5Activity;
+import com.android.bigserj.classWrok6.ClassWork6Activity;
 import com.android.bigserj.homeWork5.HomeWork5Activity;
 import com.android.bigserj.R;
 import com.android.bigserj.classWork3.ClassWork3Activity;
@@ -17,6 +18,7 @@ import com.android.bigserj.classwork2.ClassWork2Activity;
 import com.android.bigserj.homeWork2.HomeWork2Activity;
 import com.android.bigserj.homeWork3.HomeWork3Activity;
 import com.android.bigserj.homeWork4.HomeWork4Activity;
+import com.android.bigserj.homeWork6.HomeWork6Activity;
 
 
 public class MainActivity extends Activity{
@@ -96,6 +98,22 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HomeWork5Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw6Button = (Button)findViewById(R.id.cw6_button);
+        cw6Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork6Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw6Button = (Button)findViewById(R.id.hw6_button);
+        hw6Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork6Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

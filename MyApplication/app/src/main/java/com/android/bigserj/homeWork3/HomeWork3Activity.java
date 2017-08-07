@@ -17,7 +17,7 @@ public class HomeWork3Activity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_homework3);
+        setContentView(R.layout.activity_homework3);
 
         ImageView task1ImageView = (ImageView)findViewById(R.id.task1_image);
         TextView task1TextView = (TextView)findViewById(R.id.task1_text);
@@ -26,7 +26,6 @@ public class HomeWork3Activity extends AppCompatActivity{
                 .load(task1TextView.getText().toString())
                 .apply(RequestOptions.circleCropTransform())
                 .into(task1ImageView);
-
 
 
         TextView task3TextView = (TextView)findViewById(R.id.task3_text);

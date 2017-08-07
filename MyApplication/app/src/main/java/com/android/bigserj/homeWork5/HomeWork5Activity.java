@@ -14,13 +14,7 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.android.bigserj.ClassWork5.ClassWork5Activity;
-import com.android.bigserj.ClassWork5.MyBroadcastReceiver;
-import com.android.bigserj.ClassWork5.MyIntentService;
-import com.android.bigserj.ClassWork5.MyService;
 import com.android.bigserj.R;
-
-import java.lang.reflect.Method;
 
 public class HomeWork5Activity extends Activity{
 

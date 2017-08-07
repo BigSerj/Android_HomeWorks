@@ -70,6 +70,18 @@
             android:layout_height="@dimen/main_button_size_y"
             android:text="@string/hw5" />
 
+        <Button
+            android:id="@+id/cw6_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw6" />
+
+        <Button
+            android:id="@+id/hw6_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/hw6" />
+
     </LinearLayout>
 
 

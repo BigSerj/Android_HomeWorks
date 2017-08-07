@@ -1,11 +1,9 @@
-package com.android.bigserj.ClassWork5;
+package com.android.bigserj.classWork5;
 
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.content.IntentSender;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringDef;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 

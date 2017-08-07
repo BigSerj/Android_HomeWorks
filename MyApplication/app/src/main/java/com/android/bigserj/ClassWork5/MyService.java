@@ -1,10 +1,9 @@
-package com.android.bigserj.ClassWork5;
+package com.android.bigserj.classWork5;
 
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package com.android.bigserj.ClassWork5;
+package com.android.bigserj.classWork5;
 
 
 import android.app.Activity;
@@ -12,7 +12,6 @@ import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
-import android.text.InputFilter;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;

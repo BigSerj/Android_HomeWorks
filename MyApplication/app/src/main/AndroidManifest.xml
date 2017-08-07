@@ -30,8 +30,10 @@
         <activity android:name="com.android.bigserj.homeWork4.HomeWork4Activity"/>
         <activity android:name="com.android.bigserj.homeWork4.AnalogClocksActivity"/>
         <activity android:name="com.android.bigserj.homeWork5.HomeWork5Activity"/>
-        <activity android:name="com.android.bigserj.ClassWork5.ClassWork5Activity"/>
-        <activity android:name="com.android.bigserj.ClassWork4.ClassWork4Activity"/>
+        <activity android:name="com.android.bigserj.homeWork6.HomeWork6Activity"/>
+        <activity android:name="com.android.bigserj.classWrok6.ClassWork6Activity"/>
+        <activity android:name="com.android.bigserj.classWork5.ClassWork5Activity"/>
+        <activity android:name="com.android.bigserj.classWork4.ClassWork4Activity"/>
         <activity android:name="com.android.bigserj.classWork3.ClassWork3Activity"/>
         <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
 
@@ -44,8 +46,8 @@
             <!--</intent-filter>-->
         <!--</receiver>-->
 
-        <service android:name=".ClassWork5.MyService"/>
-        <service android:name=".ClassWork5.MyIntentService"/>
+        <service android:name=".classWork5.MyService"/>
+        <service android:name=".classWork5.MyIntentService"/>
 
 
         <receiver android:name=".homeWork5.MyBroadcastReceiverHomeWork5">
