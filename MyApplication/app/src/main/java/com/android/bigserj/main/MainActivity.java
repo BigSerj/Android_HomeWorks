@@ -10,7 +10,8 @@ import android.widget.Button;
 
 import com.android.bigserj.classWork4.ClassWork4Activity;
 import com.android.bigserj.classWork5.ClassWork5Activity;
-import com.android.bigserj.classWrok6.ClassWork6Activity;
+import com.android.bigserj.classWork7.ClassWork7Activity;
+import com.android.bigserj.classWork6.ClassWork6Activity;
 import com.android.bigserj.homeWork5.HomeWork5Activity;
 import com.android.bigserj.R;
 import com.android.bigserj.classWork3.ClassWork3Activity;
@@ -114,6 +115,14 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HomeWork6Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw7Button = (Button)findViewById(R.id.cw7_button);
+        cw7Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork7Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

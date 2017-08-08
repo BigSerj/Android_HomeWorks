@@ -29,6 +29,11 @@ android {
             versionName "1.0-pay"
         }
     }
+
+    dataBinding{
+        enabled =true
+    }
+
 }
 repositories {
     mavenCentral() // jcenter() works as well because it pulls from Maven Central
@@ -63,5 +68,8 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+
+    // датабиндинг (связывание даты) (classwork7)
+    annotationProcessor "com.android.databinding:compiler:2.3.0"
 
 }

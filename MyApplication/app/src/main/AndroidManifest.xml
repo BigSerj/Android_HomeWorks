@@ -31,7 +31,9 @@
         <activity android:name="com.android.bigserj.homeWork4.AnalogClocksActivity"/>
         <activity android:name="com.android.bigserj.homeWork5.HomeWork5Activity"/>
         <activity android:name="com.android.bigserj.homeWork6.HomeWork6Activity"/>
-        <activity android:name="com.android.bigserj.classWrok6.ClassWork6Activity"/>
+
+        <activity android:name="com.android.bigserj.classWork7.ClassWork7Activity"/>
+        <activity android:name="com.android.bigserj.classWork6.ClassWork6Activity"/>
         <activity android:name="com.android.bigserj.classWork5.ClassWork5Activity"/>
         <activity android:name="com.android.bigserj.classWork4.ClassWork4Activity"/>
         <activity android:name="com.android.bigserj.classWork3.ClassWork3Activity"/>

@@ -35,6 +35,7 @@ public class HomeWork6Adapter extends RecyclerView.Adapter<HomeWork6Adapter.Hold
     }
 
 
+    // создаем Holder
     @Override
     public HomeWork6Adapter.Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         this.context = parent.getContext();
@@ -44,6 +45,8 @@ public class HomeWork6Adapter extends RecyclerView.Adapter<HomeWork6Adapter.Hold
         return new Holder(root);
     }
 
+
+    // заполняем Holder
     @Override
     public void onBindViewHolder(final HomeWork6Adapter.Holder holder, int position) {
         Log.e("AAA","onBindViewHolder() position = "+position);
@@ -86,6 +89,7 @@ public class HomeWork6Adapter extends RecyclerView.Adapter<HomeWork6Adapter.Hold
 
     }
 
+    // считает сколько раз нужно вызвать onBindViewHolder()
     @Override
     public int getItemCount() {
         return items == null ? 0 : items.size();

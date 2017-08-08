@@ -1,4 +1,4 @@
-package com.android.bigserj.classWrok6;
+package com.android.bigserj.classWork6;
 
 
 import android.support.v7.widget.RecyclerView;
@@ -18,6 +18,8 @@ public class ClassWork6Adapter extends RecyclerView.Adapter<ClassWork6Adapter.Ho
 
     private ArrayList<String> items;
 
+    private OnItemClickListener listener;
+
     public ClassWork6Adapter(ArrayList<String> items) {
         this.items = items;
     }
@@ -34,9 +36,18 @@ public class ClassWork6Adapter extends RecyclerView.Adapter<ClassWork6Adapter.Ho
     public void onBindViewHolder(Holder holder, int position) {
         Log.e("AAA","onBindViewHolder() position = "+position);
 
-        String item = items.get(position);
+        final String item = items.get(position);
 //        holder.imageView -заполнить дома
         holder.textView.setText(item);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (listener!=null){
+                    listener.onItemClick(item);
+                }
+            }
+        });
     }
 
     @Override
@@ -57,4 +68,13 @@ public class ClassWork6Adapter extends RecyclerView.Adapter<ClassWork6Adapter.Ho
     }
 
 
+
+    // делаем чтобы по нажатию на картинку происходил переход на соотв активити
+    interface OnItemClickListener{
+        void onItemClick(String item);
+    }
+
+    public void setListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
 }

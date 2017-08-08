@@ -1,11 +1,11 @@
-package com.android.bigserj.classWrok6;
+package com.android.bigserj.classWork6;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.android.bigserj.R;
 
@@ -37,8 +37,17 @@ public class ClassWork6Activity extends Activity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
 
+
         //
         ClassWork6Adapter adapter = new ClassWork6Adapter(stringArrayList);
+
+        adapter.setListener(new ClassWork6Adapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(String item) {
+                Log.e("AAA","onItemClick" + item);
+            }
+        });
+
         recyclerView.setAdapter(adapter);
 
     }
