@@ -17,11 +17,17 @@
     <string name="hw6">hw6</string>
     <string name="cw6">cw6</string>
     <string name="cw7">cw7</string>
+    <string name="cw8">cw8</string>
+    <string name="hw7">hw7</string>
     <string name="url">https://goo.gl/oaZVyX</string>
     <string name="strangebutton">strangeButton</string>
     <string name="cw4">cw4</string>
     <string name="cw5">cw5</string>
     <string name="clocks">Clocks</string>
+
+    <!--HomeWork7-->
+    <string name="female">Женщина</string>
+    <string name="male">Мужчина</string>
 
 
 </resources>

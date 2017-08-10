@@ -8,6 +8,7 @@
 
     <!-- HomeWork2 -->
     <color name="colorRed">#ff0000</color>
+    <color name="colorLightRed">#ffeeee</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorLightBlue">#e9f6ff</color>
     <color name="colorGreen">#00ce0a</color>
@@ -15,6 +16,9 @@
     <color name="colorYellow">#ffe100</color>
     <color name="colorBlue">#001aff</color>
     <color name="colorDarkRed">#c10004</color>
+
+    <color name="colorTextMale">#000fb3</color>
+    <color name="colorTextFemale">#940003</color>
 
 
 </resources>

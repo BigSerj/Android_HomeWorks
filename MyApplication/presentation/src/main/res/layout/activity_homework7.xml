@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="person"
+            type="com.android.bigserj.homeWork7.HomeWork7Activity" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background='@{person.newUser.isMale ? @color/colorLightBlue : @color/colorLightRed}'
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            app:image_url='@{person.newUser.imageUrl}' />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="имя: " />
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor='@{person.newUser.isMale ? @color/colorTextMale : @color/colorTextFemale}'
+                android:text='@{person.newUser.firstName}' />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="фамилия: " />
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor='@{person.newUser.isMale ? @color/colorTextMale : @color/colorTextFemale}'
+                android:text='@{person.newUser.lastName}' />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="возраст: " />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor='@{person.newUser.isMale ? @color/colorTextMale : @color/colorTextFemale}'
+                android:text='@{Integer.toString(person.newUser.age)}' />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="пол: " />
+
+            <TextView
+                android:id="@+id/isMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor='@{person.newUser.isMale ? @color/colorTextMale : @color/colorTextFemale}'
+                android:text='@{person.newUser.isMale ? "М" : "Ж"}' />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

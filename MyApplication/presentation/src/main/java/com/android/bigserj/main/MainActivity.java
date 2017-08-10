@@ -20,6 +20,8 @@ import com.android.bigserj.homeWork2.HomeWork2Activity;
 import com.android.bigserj.homeWork3.HomeWork3Activity;
 import com.android.bigserj.homeWork4.HomeWork4Activity;
 import com.android.bigserj.homeWork6.HomeWork6Activity;
+import com.android.bigserj.homeWork7.HomeWork7Activity;
+import com.android.bigserj.classwork8.ClassWork8Activity;
 
 
 public class MainActivity extends Activity{
@@ -126,7 +128,22 @@ public class MainActivity extends Activity{
                 startActivity(intent);
             }
         });
-
+        Button hw7Button = (Button)findViewById(R.id.hw7_button);
+        hw7Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork7Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw8Button = (Button)findViewById(R.id.cw8_button);
+        cw8Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork8Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
     }
 
 

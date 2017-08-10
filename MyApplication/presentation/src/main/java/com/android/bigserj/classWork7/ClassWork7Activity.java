@@ -14,7 +14,7 @@ public class ClassWork7Activity extends Activity{
 
     public ObservableField<String> myText = new ObservableField<>("YoYoYo");
 
-    private Thread tehread;
+    private Thread thread;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -25,8 +25,7 @@ public class ClassWork7Activity extends Activity{
 
         binding.setActivity(this);
 
-        binding.superTextView.setText("fwdfwg");
-
+        binding.superTextView.setText("tututu");
 
     }
 
@@ -34,7 +33,7 @@ public class ClassWork7Activity extends Activity{
     @Override
     protected void onResume() {
         super.onResume();
-        tehread = new Thread(new Runnable(){
+        thread = new Thread(new Runnable(){
             @Override
             public void run() {
                  for (int i=0;i<3;i++){
@@ -51,6 +50,6 @@ public class ClassWork7Activity extends Activity{
                  }
             }
         });
-        tehread.start();
+        thread.start();
     }
 }
