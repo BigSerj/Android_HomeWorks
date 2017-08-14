@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.android.bigserj.homework1"
+        applicationId "com.android.bigserj"
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
@@ -65,11 +65,15 @@ dependencies {
 //    compile 'com.facebook.fresco:fresco:1.4.0'
 
 //    утечки
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+//    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 
     // датабиндинг (связывание даты) (classwork7)
     annotationProcessor "com.android.databinding:compiler:2.3.0"
+
+
+    // подключаем domain
+    compile project(path: ':domain')
 
 }

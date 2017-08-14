@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.android.bigserj">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -7,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
+        tools:node="replace"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Main project"
@@ -32,7 +34,9 @@
         <activity android:name="com.android.bigserj.homeWork5.HomeWork5Activity"/>
         <activity android:name="com.android.bigserj.homeWork6.HomeWork6Activity"/>
         <activity android:name="com.android.bigserj.homeWork7.HomeWork7Activity"/>
+        <activity android:name="com.android.bigserj.homeWork9.HomeWork9Activity"/>
 
+        <activity android:name="com.android.bigserj.classwork9.ClassWork9Activity"/>
         <activity android:name="com.android.bigserj.classwork8.ClassWork8Activity"/>
         <activity android:name="com.android.bigserj.classWork7.ClassWork7Activity"/>
         <activity android:name="com.android.bigserj.classWork6.ClassWork6Activity"/>

@@ -8,8 +8,6 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 import com.android.bigserj.base.BaseViewModel;
-import com.android.bigserj.classWork5.ClassWork5Activity;
-import com.bumptech.glide.load.engine.bitmap_recycle.IntegerArrayAdapter;
 
 public class ClassWork8ViewModel implements BaseViewModel{
 

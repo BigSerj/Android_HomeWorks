@@ -8,10 +8,12 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.bigserj.homeWork9.HomeWork9Activity;
 import com.android.bigserj.classWork4.ClassWork4Activity;
 import com.android.bigserj.classWork5.ClassWork5Activity;
 import com.android.bigserj.classWork7.ClassWork7Activity;
 import com.android.bigserj.classWork6.ClassWork6Activity;
+import com.android.bigserj.classwork9.ClassWork9Activity;
 import com.android.bigserj.homeWork5.HomeWork5Activity;
 import com.android.bigserj.R;
 import com.android.bigserj.classWork3.ClassWork3Activity;
@@ -141,6 +143,22 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ClassWork8Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw9Button = (Button)findViewById(R.id.cw9_button);
+        cw9Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork9Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw9Button = (Button)findViewById(R.id.hw9_button);
+        hw9Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork9Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });
