@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.android.bigserj.R;
 import com.android.bigserj.base.BaseViewModel;
 import com.android.bigserj.domain.entity.HomeWork9ArrayListForLinks;
-import com.android.bigserj.domain.interaction.HomeWork9UseCase;
+//import com.android.bigserj.domain.interaction.HomeWork9UseCase;
 
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class HomeWork9ViewModel implements BaseViewModel {
 
     public ObservableField<ArrayList<String>> stringArrayList = new ObservableField<>();
 
-    private HomeWork9UseCase useCase = new HomeWork9UseCase();
+//    private HomeWork9UseCase useCase = new HomeWork9UseCase();
 
 
     @Override
@@ -49,10 +49,10 @@ public class HomeWork9ViewModel implements BaseViewModel {
         recyclerView.setLayoutManager(gm);
 
 
-        HomeWork9ArrayListForLinks homeWork9ArrayListForLinks = useCase
-                .execute("Дай коллекцию с URL-ами, что ли");
-
-        stringArrayList.set(homeWork9ArrayListForLinks.getStringArrayList());
+//        HomeWork9ArrayListForLinks homeWork9ArrayListForLinks = useCase
+//                .execute("Дай коллекцию с URL-ами, что ли");
+//
+//        stringArrayList.set(homeWork9ArrayListForLinks.getStringArrayList());
 
 
         // инициализируем адаптер

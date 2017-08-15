@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.bigserj.homeWork10.HomeWork10Activity;
 import com.android.bigserj.homeWork9.HomeWork9Activity;
 import com.android.bigserj.classWork4.ClassWork4Activity;
 import com.android.bigserj.classWork5.ClassWork5Activity;
@@ -159,6 +160,14 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HomeWork9Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw10Button = (Button)findViewById(R.id.hw10_button);
+        hw10Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork10Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

@@ -1,11 +1,12 @@
-package com.android.bigserj.domain.entity;
+package com.android.bigserj.data.entity;
 
 
-public class Profile {
+public class Profile implements DataModel{
 
     private String name;
     private String surName;
     private int age;
+
 
     public String getName() {
         return name;

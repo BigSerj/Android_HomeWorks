@@ -34,10 +34,12 @@ android {
         enabled =true
     }
 
+
 }
 repositories {
     mavenCentral() // jcenter() works as well because it pulls from Maven Central
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -71,6 +73,16 @@ dependencies {
 
     // датабиндинг (связывание даты) (classwork7)
     annotationProcessor "com.android.databinding:compiler:2.3.0"
+
+
+
+    // RxJava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.2'
+
+
+
+
 
 
     // подключаем domain

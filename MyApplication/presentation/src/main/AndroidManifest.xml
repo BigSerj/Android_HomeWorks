@@ -35,6 +35,7 @@
         <activity android:name="com.android.bigserj.homeWork6.HomeWork6Activity"/>
         <activity android:name="com.android.bigserj.homeWork7.HomeWork7Activity"/>
         <activity android:name="com.android.bigserj.homeWork9.HomeWork9Activity"/>
+        <activity android:name="com.android.bigserj.homeWork10.HomeWork10Activity"/>
 
         <activity android:name="com.android.bigserj.classwork9.ClassWork9Activity"/>
         <activity android:name="com.android.bigserj.classwork8.ClassWork8Activity"/>

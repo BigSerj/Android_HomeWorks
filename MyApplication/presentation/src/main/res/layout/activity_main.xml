@@ -119,6 +119,13 @@
             android:layout_height="@dimen/main_button_size_y"
             android:text="@string/hw9" />
 
+        <Button
+            android:id="@+id/hw10_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:textSize="13sp"
+            android:text="@string/hw10" />
+
 
     </LinearLayout>
 

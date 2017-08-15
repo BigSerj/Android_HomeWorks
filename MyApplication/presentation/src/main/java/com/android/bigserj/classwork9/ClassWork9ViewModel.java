@@ -4,16 +4,19 @@ package com.android.bigserj.classwork9;
 import android.app.Activity;
 import android.databinding.ObservableField;
 import android.databinding.ObservableInt;
-import android.os.AsyncTask;
 import android.util.Log;
 
 import com.android.bigserj.base.BaseViewModel;
-import com.android.bigserj.classwork8.ClassWork8Activity;
-import com.android.bigserj.domain.entity.Profile;
+import com.android.bigserj.domain.entity.ProfileModel;
 import com.android.bigserj.domain.entity.ProfileId;
 import com.android.bigserj.domain.interaction.ProfileUseCase;
 
+import io.reactivex.annotations.NonNull;
+import io.reactivex.observers.DisposableObserver;
+import io.reactivex.subjects.PublishSubject;
+
 public class ClassWork9ViewModel implements BaseViewModel{
+
 
     public Activity activity;
     public ClassWork9ViewModel(Activity activity) {
@@ -44,17 +47,40 @@ public class ClassWork9ViewModel implements BaseViewModel{
         ProfileId profileId = new ProfileId();
         profileId.setId("123");// это для теста, как будто у нас есть id пользователя
 
-        Profile profile = useCase.execute(profileId);
+        // сделали подписку на получение информации
+        useCase.execute(profileId, new DisposableObserver<ProfileModel>() {
+            @Override
+            public void onNext(@NonNull ProfileModel profile) {
+                name.set(profile.getName());
+                surname.set(profile.getSurName());
+                age.set(profile.getAge());
 
-        name.set(profile.getName());
-        surname.set(profile.getSurName());
-        age.set(profile.getAge());
+                state.set(STATE.DATA);
+            }
 
-        state.set(STATE.DATA);
+            @Override
+            public void onError(@NonNull Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+
+
+
+
+
 
     }
 
     @Override
     public void pause() {
+
+        useCase.dispose();
+
     }
 }
