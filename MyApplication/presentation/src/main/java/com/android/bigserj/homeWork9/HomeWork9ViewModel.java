@@ -10,13 +10,18 @@ import com.android.bigserj.R;
 import com.android.bigserj.base.BaseViewModel;
 import com.android.bigserj.domain.entity.HomeWork9ArrayListForLinks;
 //import com.android.bigserj.domain.interaction.HomeWork9UseCase;
+//import com.android.bigserj.domain.interaction.HomeWork9UseCase;
 
 import java.util.ArrayList;
+
+import io.reactivex.annotations.NonNull;
+import io.reactivex.observers.DisposableObserver;
 
 public class HomeWork9ViewModel implements BaseViewModel {
 
 
     public Activity activity;
+
     public HomeWork9ViewModel(Activity activity) {
         this.activity = activity;
     }
@@ -49,14 +54,26 @@ public class HomeWork9ViewModel implements BaseViewModel {
         recyclerView.setLayoutManager(gm);
 
 
-//        HomeWork9ArrayListForLinks homeWork9ArrayListForLinks = useCase
-//                .execute("Дай коллекцию с URL-ами, что ли");
+//        useCase.execute("Дай коллекцию с URL-ами, что ли", new DisposableObserver<HomeWork9ArrayListForLinks>() {
+//            @Override
+//            public void onNext(@NonNull HomeWork9ArrayListForLinks homeWork9ArrayListForLinks) {
+//                stringArrayList.set(homeWork9ArrayListForLinks.getStringArrayList());
+//            }
 //
-//        stringArrayList.set(homeWork9ArrayListForLinks.getStringArrayList());
+//            @Override
+//            public void onError(@NonNull Throwable e) {
+//
+//            }
+//
+//            @Override
+//            public void onComplete() {
+//
+//            }
+//        });
 
 
         // инициализируем адаптер
-        recyclerView.setAdapter(new HomeWork9Adapter(stringArrayList.get()));
+//        recyclerView.setAdapter(new HomeWork9Adapter(stringArrayList.get()));
 
 
     }

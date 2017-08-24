@@ -8,7 +8,10 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.bigserj.classWork12.ClassWork12Activity;
+import com.android.bigserj.classWork13.ClassWork13Activity;
 import com.android.bigserj.homeWork10.HomeWork10Activity;
+import com.android.bigserj.homeWork11.HomeWork11Activity;
 import com.android.bigserj.homeWork9.HomeWork9Activity;
 import com.android.bigserj.classWork4.ClassWork4Activity;
 import com.android.bigserj.classWork5.ClassWork5Activity;
@@ -168,6 +171,30 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, HomeWork10Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw11Button = (Button)findViewById(R.id.hw11_button);
+        hw11Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork11Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw12Button = (Button)findViewById(R.id.cw12_button);
+        cw12Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork12Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw13Button = (Button)findViewById(R.id.cw13_button);
+        cw13Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork13Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

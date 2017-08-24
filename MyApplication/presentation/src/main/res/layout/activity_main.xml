@@ -90,6 +90,7 @@
             android:text="@string/cw7" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -123,11 +124,38 @@
             android:id="@+id/hw10_button"
             android:layout_width="@dimen/main_button_size_x"
             android:layout_height="@dimen/main_button_size_y"
-            android:textSize="13sp"
-            android:text="@string/hw10" />
+            android:text="@string/hw10"
+            android:textSize="13sp" />
+
+        <Button
+        android:id="@+id/hw11_button"
+        android:layout_width="@dimen/main_button_size_x"
+        android:layout_height="@dimen/main_button_size_y"
+        android:textSize="13sp"
+        android:text="@string/hw11" />
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cw12_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw12"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/cw13_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="@string/cw13"
+            android:textSize="13sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

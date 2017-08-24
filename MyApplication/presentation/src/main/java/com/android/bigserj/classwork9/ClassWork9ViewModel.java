@@ -9,11 +9,11 @@ import android.util.Log;
 import com.android.bigserj.base.BaseViewModel;
 import com.android.bigserj.domain.entity.ProfileModel;
 import com.android.bigserj.domain.entity.ProfileId;
-import com.android.bigserj.domain.interaction.ProfileUseCase;
+import com.android.bigserj.domain.interaction.old.ProfileUseCase;
+import com.android.bigserj.domain.interaction.old.SaveProfileUseCase;
 
 import io.reactivex.annotations.NonNull;
 import io.reactivex.observers.DisposableObserver;
-import io.reactivex.subjects.PublishSubject;
 
 public class ClassWork9ViewModel implements BaseViewModel{
 
@@ -24,14 +24,15 @@ public class ClassWork9ViewModel implements BaseViewModel{
     }
 
     public enum STATE {PROGRESS, DATA}
+    public ObservableField<STATE> state = new ObservableField<>(STATE.PROGRESS);
 
     public ObservableField name = new ObservableField();
     public ObservableField surname = new ObservableField();
     public ObservableInt age = new ObservableInt(0);
-    public ObservableField<STATE> state = new ObservableField<>(STATE.PROGRESS);
 
 
     private ProfileUseCase useCase = new ProfileUseCase();
+    private SaveProfileUseCase saveProfileUseCase = new SaveProfileUseCase();
 
     @Override
     public void init() {
@@ -43,6 +44,30 @@ public class ClassWork9ViewModel implements BaseViewModel{
 
     @Override
     public void resume() {
+
+        ProfileModel profileModel = new ProfileModel();
+        profileModel.setAge(27);
+        profileModel.setName("NameBB");
+        profileModel.setSurName("SNameBB");
+        saveProfileUseCase.execute(profileModel, new DisposableObserver<Void>() {
+            @Override
+            public void onNext(@NonNull Void aVoid) {
+                Log.e("AAA","OK");
+            }
+
+            @Override
+            public void onError(@NonNull Throwable e) {
+                Log.e("AAA","error = ",e);
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        });
+
+
+
 
         ProfileId profileId = new ProfileId();
         profileId.setId("123");// это для теста, как будто у нас есть id пользователя
@@ -81,6 +106,7 @@ public class ClassWork9ViewModel implements BaseViewModel{
     public void pause() {
 
         useCase.dispose();
+        saveProfileUseCase.dispose();
 
     }
 }

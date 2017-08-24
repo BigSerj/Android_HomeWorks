@@ -9,21 +9,31 @@ import io.reactivex.schedulers.Schedulers;
 
 public abstract class UseCase<InParam, OutParam> {
 
-    // в RxJava-1 назывался subscriber
+
+
+
     private Disposable disposable;
 
-    protected abstract Observable<OutParam> buildUseCase();
+    protected abstract Observable<OutParam> buildUseCase(InParam param);
 
-    public void execute(InParam param, DisposableObserver<OutParam> disposableObserver){
-        disposable = buildUseCase()
-                .observeOn(AndroidSchedulers.mainThread())  // нужно выполнить в потоке UI
-                .subscribeOn(Schedulers.newThread())  // где выполнить observable
+
+
+
+    public void execute(InParam param, DisposableObserver<OutParam> disposableObserver) {
+        disposable = buildUseCase(param)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.newThread())
                 .subscribeWith(disposableObserver);
     }
 
-    public void dispose(){
-        if (!disposable.isDisposed())
+
+
+
+    public void dispose() {
+        if(!disposable.isDisposed())
             disposable.dispose();
     }
+
+
 
 }

@@ -1,10 +1,17 @@
 package com.android.bigserj.data.entity;
 
 
+import com.google.gson.annotations.SerializedName;
+
 public class Profile implements DataModel{
 
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("surName")
     private String surName;
+
+    @SerializedName("age")
     private int age;
 
 

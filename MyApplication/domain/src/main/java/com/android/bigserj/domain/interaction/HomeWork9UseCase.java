@@ -41,6 +41,6 @@
 //        HomeWork9ArrayListForLinks homeWork9ArrayListForLinks = new HomeWork9ArrayListForLinks();
 //        homeWork9ArrayListForLinks.setStringArrayList(stringArrayList);
 //
-//        return Observable.just(stringArrayList);
+//        return Observable.just(homeWork9ArrayListForLinks);
 //    }
 //}
