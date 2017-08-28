@@ -5,17 +5,17 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.android.bigserj.base.BaseItemViewHolder;
-import com.android.bigserj.classWork12.ProfileItemViewModel;
-import com.android.bigserj.databinding.ItemProfileBinding;
 import com.android.bigserj.databinding.ItemProfileHw11Binding;
 import com.android.bigserj.domain.entity.ProfileModel;
 
 public class ProfileItemViewHolderHW11 extends BaseItemViewHolder<ProfileModel,
         ProfileItemViewModelHW11, ItemProfileHw11Binding> {
 
-    public ProfileItemViewHolderHW11(ItemProfileHw11Binding binding, ProfileItemViewModelHW11 viewModel) {
+    public ProfileItemViewHolderHW11(ItemProfileHw11Binding binding,
+                                     ProfileItemViewModelHW11 viewModel) {
         super(binding, viewModel);
         binding.setViewModel(viewModel);
+        binding.setHandlers(new MyHandlersHW11(viewModel));
     }
 
     public static ProfileItemViewHolderHW11 create(LayoutInflater inflater, ViewGroup parent,

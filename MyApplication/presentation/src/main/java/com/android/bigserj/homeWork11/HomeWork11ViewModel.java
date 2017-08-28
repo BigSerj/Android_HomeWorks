@@ -8,7 +8,6 @@ import android.util.Log;
 import com.android.bigserj.base.BaseViewModel;
 import com.android.bigserj.domain.entity.ProfileModel;
 import com.android.bigserj.domain.interaction.HomeWork11.GetAllProfilesUseCaseHW11;
-import com.android.bigserj.domain.interaction.HomeWork11.GetProfileUseCaseHW11;
 
 import java.util.List;
 

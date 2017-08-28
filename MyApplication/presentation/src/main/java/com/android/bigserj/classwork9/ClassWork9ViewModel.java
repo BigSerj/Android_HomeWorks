@@ -26,8 +26,8 @@ public class ClassWork9ViewModel implements BaseViewModel{
     public enum STATE {PROGRESS, DATA}
     public ObservableField<STATE> state = new ObservableField<>(STATE.PROGRESS);
 
-    public ObservableField name = new ObservableField();
-    public ObservableField surname = new ObservableField();
+    public ObservableField<String> name = new ObservableField<>();
+    public ObservableField<String> surname = new ObservableField<>();
     public ObservableInt age = new ObservableInt(0);
 
 
@@ -70,7 +70,7 @@ public class ClassWork9ViewModel implements BaseViewModel{
 
 
         ProfileId profileId = new ProfileId();
-        profileId.setId("123");// это для теста, как будто у нас есть id пользователя
+        profileId.setId("123");// это для теста, как будто у нас есть ID_NUMBER пользователя
 
         // сделали подписку на получение информации
         useCase.execute(profileId, new DisposableObserver<ProfileModel>() {

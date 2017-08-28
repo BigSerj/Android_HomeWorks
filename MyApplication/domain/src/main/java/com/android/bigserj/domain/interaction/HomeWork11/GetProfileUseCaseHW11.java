@@ -15,13 +15,13 @@ import io.reactivex.Observable;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Function;
 
-public class GetProfileUseCaseHW11 extends UseCase<ProfileId, ProfileModel> {
+public class GetProfileUseCaseHW11 extends UseCase<String, ProfileModel> {
 
     @Override
-    protected Observable<ProfileModel> buildUseCase(ProfileId profileId) {
+    protected Observable<ProfileModel> buildUseCase(String profileId) {
         return RestService
                 .getInstance()
-                .getProfile(profileId.getId())
+                .getProfile(profileId)
                 .map(new Function<Profile, ProfileModel>() {
                     @Override
                     public ProfileModel apply(@NonNull Profile profileThis) throws Exception {

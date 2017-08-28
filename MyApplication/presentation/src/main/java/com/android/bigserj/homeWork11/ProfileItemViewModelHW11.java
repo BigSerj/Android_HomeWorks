@@ -13,6 +13,7 @@ import com.android.bigserj.domain.entity.ProfileModel;
 public class ProfileItemViewModelHW11 extends BaseItemViewModel<ProfileModel> {
 
     public ObservableField<String> name = new ObservableField<>("");
+    public ObservableField<String> id = new ObservableField<>();
 
 
     @Override
@@ -20,6 +21,7 @@ public class ProfileItemViewModelHW11 extends BaseItemViewModel<ProfileModel> {
         Log.e("AAA", "ITEM " + position);
         Log.e("AAA", "ITEM name " + item.getName());
         name.set(item.getName());
+        id.set(item.getId());
 
     }
 

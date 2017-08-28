@@ -9,6 +9,7 @@ import io.reactivex.Observable;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -20,12 +21,15 @@ public interface RestApi {
 
     // возвращает один профиль "resourceName"
     @GET("data/profile/{id}")
-    Observable<Profile> getProfile(@Query("id") String Id);
+    Observable<Profile> getProfile(@Path("id") String id);
 
     // значит этот объект профиля который подадим будет конверирован в json и передан в тело запроса
     @POST("data/profile")
-    Observable<Void> saveProfile(@Body Profile profile);
+    Observable<Void> saveNewProfile(@Body Profile profile);
 
+    // редактируем
+    @PUT("data/profile/{id}")
+    Observable<Void> editProfile(@Path("id") String id, @Body Profile profile);
 }
 
 

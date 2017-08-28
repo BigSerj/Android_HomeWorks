@@ -29,7 +29,7 @@
 
     <!--<fragment-->
         <!--android:name="com.android.bigserj.classWork13.ClassWork13V1Fragment"-->
-        <!--android:id="@+id/ddd"-->
+        <!--android:ID_NUMBER="@+ID_NUMBER/ddd"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"/>-->
 

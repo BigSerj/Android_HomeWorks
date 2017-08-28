@@ -34,6 +34,7 @@ public class GetAllProfilesUseCaseHW11 extends UseCase<Void, List<ProfileModel>>
 
     private ProfileModel convert(Profile dataModel) {
         ProfileModel profileModel = new ProfileModel();
+        profileModel.setId(dataModel.getId());
         profileModel.setName(dataModel.getName());
         profileModel.setSurName(dataModel.getSurName());
         profileModel.setAge(dataModel.getAge());

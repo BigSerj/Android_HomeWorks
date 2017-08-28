@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.android.bigserj.homeWork11.HomeWork11ViewModel3" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBlue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editTextHW11Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorLightRed"
+            android:text="@{viewModel.name.get()}" />
+
+        <EditText
+            android:id="@+id/editTextHW11SurName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorLightRed"
+            android:text="@{viewModel.sureName.get()}" />
+
+        <EditText
+            android:id="@+id/editTextHW11Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/colorLightRed"
+            android:text="@{String.valueOf(viewModel.age.get())}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButtonHW11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Changes" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add NEW" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

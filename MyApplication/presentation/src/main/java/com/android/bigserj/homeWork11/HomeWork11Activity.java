@@ -6,15 +6,11 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.android.bigserj.R;
 import com.android.bigserj.base.BaseActivity;
 import com.android.bigserj.databinding.ActivityHomework11Binding;
-
-import java.util.ArrayList;
 
 
 public class HomeWork11Activity extends BaseActivity{
@@ -39,8 +35,6 @@ public class HomeWork11Activity extends BaseActivity{
 
 
         super.onCreate(savedInstanceState);
-
-
 
     }
 }
