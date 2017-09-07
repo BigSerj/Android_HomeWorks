@@ -8,10 +8,14 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.bigserj.classwork14.ClassWork14Activity;
+import com.android.bigserj.homeWork13.HomeWork13Activity;
 import com.android.bigserj.classWork12.ClassWork12Activity;
 import com.android.bigserj.classWork13.ClassWork13Activity;
 import com.android.bigserj.homeWork10.HomeWork10Activity;
 import com.android.bigserj.homeWork11.HomeWork11Activity;
+//import com.android.bigserj.homeWork14.HomeWork14Activity;
+import com.android.bigserj.homeWork14.HomeWork14Activity;
 import com.android.bigserj.homeWork9.HomeWork9Activity;
 import com.android.bigserj.classWork4.ClassWork4Activity;
 import com.android.bigserj.classWork5.ClassWork5Activity;
@@ -195,6 +199,30 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ClassWork13Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw13Button = (Button)findViewById(R.id.hw13_button);
+        hw13Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork13Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw14Button = (Button)findViewById(R.id.cw14_button);
+        cw14Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork14Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button hw14Button = (Button)findViewById(R.id.hw14_button);
+        hw14Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeWork14Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

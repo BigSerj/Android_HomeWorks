@@ -1,4 +1,4 @@
-package com.android.bigserj.classWork13;
+package com.android.bigserj.homeWork13;
 
 
 import android.content.Context;
@@ -11,27 +11,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.bigserj.R;
+import com.android.bigserj.base.BaseFragment;
 
-public class ClassWork13V1Fragment extends Fragment{
+public class HomeWork13V1Fragment extends BaseFragment {
 
     public static final String TEXT_KEY = "TEXT_KEY";
     private String text;
 
-    public static ClassWork13V1Fragment newInstance(FragmentManager fragmentManager, String text) {
+    public static HomeWork13V1Fragment newInstance(FragmentManager fragmentManager, String text) {
 
-        Fragment fragment = fragmentManager.findFragmentByTag(ClassWork13V1Fragment.class.getName());
-        ClassWork13V1Fragment classWork13V1Fragment;
+        Fragment fragment = fragmentManager.findFragmentByTag(HomeWork13V1Fragment.class.getName());
+        HomeWork13V1Fragment homeWork13V1Fragment;
 
-        if (fragment != null && fragment instanceof ClassWork13V1Fragment)
-            classWork13V1Fragment = (ClassWork13V1Fragment)fragment;
+        if (fragment != null && fragment instanceof HomeWork13V1Fragment)
+            homeWork13V1Fragment = (HomeWork13V1Fragment)fragment;
         else {
-            classWork13V1Fragment = new ClassWork13V1Fragment();
+            homeWork13V1Fragment = new HomeWork13V1Fragment();
             Bundle bundle = new Bundle();
             bundle.putString(TEXT_KEY, text);
             fragment.setArguments(bundle);
         }
 
-        return classWork13V1Fragment;
+        return homeWork13V1Fragment;
     }
 
 
@@ -47,7 +48,7 @@ public class ClassWork13V1Fragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_classwork13v1, container,false);
+        return inflater.inflate(R.layout.fragment_homework13v1, container,false);
     }
 
     @Override

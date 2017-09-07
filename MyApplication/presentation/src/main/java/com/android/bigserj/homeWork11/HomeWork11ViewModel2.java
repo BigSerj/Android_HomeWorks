@@ -63,18 +63,6 @@ public class HomeWork11ViewModel2 implements BaseViewModel{
 
                 state.set(STATE.DATA);
 
-                Button textEditButton = (Button)activity.findViewById(R.id.textEdit);
-                textEditButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(view.getContext(), HomeWork11Activity3.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
-                        intent.putExtra(NAME_NUMBER,name.get());
-                        intent.putExtra(SURNAME_NUMBER,sureName.get());
-                        intent.putExtra(AGE_NUMBER,age.get().toString());
-                        intent.putExtra(ID_NUMBER,id);
-                        activity.startActivity(intent);
-                    }
-                });
             }
 
             @Override
@@ -85,6 +73,19 @@ public class HomeWork11ViewModel2 implements BaseViewModel{
             @Override
             public void onComplete() {
                 Log.e("AAAA item", "onComplete");
+            }
+        });
+
+        Button textEditButton = (Button)activity.findViewById(R.id.textEdit);
+        textEditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), HomeWork11Activity3.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                intent.putExtra(NAME_NUMBER,name.get());
+                intent.putExtra(SURNAME_NUMBER,sureName.get());
+                intent.putExtra(AGE_NUMBER,age.get().toString());
+                intent.putExtra(ID_NUMBER,id);
+                activity.startActivity(intent);
             }
         });
 

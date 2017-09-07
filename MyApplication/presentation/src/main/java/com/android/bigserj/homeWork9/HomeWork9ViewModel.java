@@ -70,9 +70,9 @@ public class HomeWork9ViewModel implements BaseViewModel {
 //
 //            }
 //        });
-
-
-        // инициализируем адаптер
+//
+//
+////         инициализируем адаптер
 //        recyclerView.setAdapter(new HomeWork9Adapter(stringArrayList.get()));
 
 

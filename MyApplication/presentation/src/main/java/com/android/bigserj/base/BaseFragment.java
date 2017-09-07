@@ -1,58 +1,53 @@
-package com.android.bigserj.classWork13;
+package com.android.bigserj.base;
 
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.android.bigserj.R;
 
-public class ClassWork13V1Fragment extends Fragment{
 
-    public static final String TEXT_KEY = "TEXT_KEY";
-    private String text;
+abstract public class BaseFragment extends Fragment{
 
-    public static ClassWork13V1Fragment newInstance(FragmentManager fragmentManager, String text) {
-
-        Fragment fragment = fragmentManager.findFragmentByTag(ClassWork13V1Fragment.class.getName());
-        ClassWork13V1Fragment classWork13V1Fragment;
-
-        if (fragment != null && fragment instanceof ClassWork13V1Fragment)
-            classWork13V1Fragment = (ClassWork13V1Fragment)fragment;
-        else {
-            classWork13V1Fragment = new ClassWork13V1Fragment();
-            Bundle bundle = new Bundle();
-            bundle.putString(TEXT_KEY, text);
-            fragment.setArguments(bundle);
-        }
-
-        return classWork13V1Fragment;
-    }
-
+//    protected BaseViewModelFragment viewModelFragment;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle bundle = getArguments();
-        if(bundle != null)
-            text = bundle.getString(TEXT_KEY);
+//        viewModelFragment.create();
     }
+
+//    @Nullable
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+//                             @Nullable Bundle savedInstanceState) {
+//        return viewModelFragment.createView();;
+//    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_classwork13v1, container,false);
+        return null;
+//        return inflater.inflate(R.layout.fragment_classwork13v2, container,false);
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+//        viewModelFragment.onPause();
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+//        viewModelFragment.destroyView();
     }
 
 
@@ -60,9 +55,7 @@ public class ClassWork13V1Fragment extends Fragment{
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        getActivity();
-
+//        viewModelFragment.viewCreated();
     }
 
 
@@ -70,11 +63,13 @@ public class ClassWork13V1Fragment extends Fragment{
     @Override
     public void onStart() {
         super.onStart();
+//        viewModelFragment.start();
     }
 
     @Override
     public void onStop() {
         super.onStop();
+//        viewModelFragment.stop();
     }
 
     /**
@@ -85,21 +80,21 @@ public class ClassWork13V1Fragment extends Fragment{
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+//        viewModelFragment.activityCreated();
     }
 
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+//        viewModelFragment.attach();
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
+//        viewModelFragment.detach();
     }
-
-
-
 
 
 }

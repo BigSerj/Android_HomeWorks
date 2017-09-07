@@ -156,6 +156,27 @@
             android:text="@string/cw13"
             android:textSize="13sp" />
 
+        <Button
+            android:id="@+id/hw13_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:textSize="13sp"
+            android:text="@string/hw13" />
+
+        <Button
+            android:id="@+id/cw14_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:textSize="13sp"
+            android:text="@string/cw14" />
+
+        <Button
+            android:id="@+id/hw14_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:textSize="13sp"
+            android:text="@string/hw14" />
+
     </LinearLayout>
 
 </LinearLayout>
