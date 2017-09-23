@@ -3,22 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.android.bigserj">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        tools:node="replace"
+        android:name=".TestApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Main project"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".homeWork3.LeakCanaryTest">
+        tools:node="replace">
+
         <!--  -->
         <!-- говорим что за активити main и пишем что внутри -->
-        <activity android:name="com.android.bigserj.main.MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,46 +27,47 @@
             </intent-filter>
         </activity>
         <!-- просто говорим (декларируем) что есть такой активити с дз1 -->
-        <activity android:name="com.android.bigserj.homework1.MainActivity"/>
-        <activity android:name="com.android.bigserj.homeWork2.HomeWork2Activity"/>
-        <activity android:name="com.android.bigserj.homeWork3.HomeWork3Activity"/>
-        <activity android:name="com.android.bigserj.homeWork4.HomeWork4Activity"/>
-        <activity android:name="com.android.bigserj.homeWork4.AnalogClocksActivity"/>
-        <activity android:name="com.android.bigserj.homeWork5.HomeWork5Activity"/>
-        <activity android:name="com.android.bigserj.homeWork6.HomeWork6Activity"/>
-        <activity android:name="com.android.bigserj.homeWork7.HomeWork7Activity"/>
-        <activity android:name="com.android.bigserj.homeWork9.HomeWork9Activity"/>
-        <activity android:name="com.android.bigserj.homeWork10.HomeWork10Activity"/>
-        <activity android:name="com.android.bigserj.homeWork11.HomeWork11Activity"/>
-        <activity android:name="com.android.bigserj.homeWork11.HomeWork11Activity2"/>
-        <activity android:name="com.android.bigserj.homeWork11.HomeWork11Activity3"/>
-        <activity android:name="com.android.bigserj.homeWork13.HomeWork13Activity"/>
-        <activity android:name="com.android.bigserj.homeWork14.HomeWork14Activity"/>
+        <activity android:name=".homework1.MainActivity" />
+        <activity android:name=".homeWork2.HomeWork2Activity" />
+        <activity android:name=".homeWork3.HomeWork3Activity" />
+        <activity android:name=".homeWork4.HomeWork4Activity" />
+        <activity android:name=".homeWork4.AnalogClocksActivity" />
+        <activity android:name=".homeWork5.HomeWork5Activity" />
+        <activity android:name=".homeWork6.HomeWork6Activity" />
+        <activity android:name=".homeWork7.HomeWork7Activity" />
+        <activity android:name=".homeWork9.HomeWork9Activity" />
+        <activity android:name=".homeWork10.HomeWork10Activity" />
+        <activity android:name=".homeWork11.HomeWork11Activity" />
+        <activity android:name=".homeWork11.HomeWork11Activity2" />
+        <activity android:name=".homeWork11.HomeWork11Activity3" />
+        <activity android:name=".homeWork13.HomeWork13Activity" />
+        <activity android:name=".homeWork14.HomeWork14Activity" />
+        <activity android:name=".classwork15.HomeWork15Activity" />
+        <activity android:name=".classWork21.RegisterActivity" />
+        <activity android:name=".classWork18.ClassWork18Activity" />
+        <activity android:name=".classWork16.ClassWork16Activity" />
+        <activity android:name=".classwork14.ClassWork14Activity" />
+        <activity android:name=".classWork13.ClassWork13Activity" />
+        <activity android:name=".classWork12.ClassWork12Activity" />
+        <activity android:name=".classwork9.ClassWork9Activity" />
+        <activity android:name=".classwork8.ClassWork8Activity" />
+        <activity android:name=".classWork7.ClassWork7Activity" />
+        <activity android:name=".classWork6.ClassWork6Activity" />
+        <activity android:name=".classWork5.ClassWork5Activity" />
+        <activity android:name=".classWork4.ClassWork4Activity" />
+        <activity android:name=".classWork3.ClassWork3Activity" />
+        <activity android:name=".classwork2.ClassWork2Activity" />
+        <activity android:name=".classwork22.MapsActivity" />
 
-        <activity android:name="com.android.bigserj.classwork14.ClassWork14Activity"/>
-        <activity android:name="com.android.bigserj.classWork13.ClassWork13Activity"/>
-        <activity android:name="com.android.bigserj.classWork12.ClassWork12Activity"/>
-        <activity android:name="com.android.bigserj.classwork9.ClassWork9Activity"/>
-        <activity android:name="com.android.bigserj.classwork8.ClassWork8Activity"/>
-        <activity android:name="com.android.bigserj.classWork7.ClassWork7Activity"/>
-        <activity android:name="com.android.bigserj.classWork6.ClassWork6Activity"/>
-        <activity android:name="com.android.bigserj.classWork5.ClassWork5Activity"/>
-        <activity android:name="com.android.bigserj.classWork4.ClassWork4Activity"/>
-        <activity android:name="com.android.bigserj.classWork3.ClassWork3Activity"/>
-        <activity android:name="com.android.bigserj.classwork2.ClassWork2Activity"/>
+        <!-- <receiver android:name=".ClassWork5.MyBroadcastReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/> -->
+        <!-- &lt;!&ndash;<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>&ndash;&gt; -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
 
-
-
-        <!--<receiver android:name=".ClassWork5.MyBroadcastReceiver">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>-->
-                <!--&lt;!&ndash;<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>&ndash;&gt;-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
-
-        <service android:name=".classWork5.MyService"/>
-        <service android:name=".classWork5.MyIntentService"/>
-
+        <service android:name=".classWork5.MyService" />
+        <service android:name=".classWork5.MyIntentService" />
 
         <receiver android:name=".homeWork5.MyBroadcastReceiverHomeWork5">
             <intent-filter>
@@ -73,9 +75,18 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".homeWork5.MyServiceHomeWork5"/>
+        <service android:name=".homeWork5.MyServiceHomeWork5" />
 
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBcZlQjk3JoF2rWOPW2mv9q8ky6EIEM2hw"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a3b6eb242e6251209f0ef48e8e8f510f4b1b6642" />
     </application>
 
 </manifest>

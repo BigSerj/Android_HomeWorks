@@ -1,6 +1,8 @@
 package com.android.bigserj.data.net;
 
+import com.android.bigserj.data.entity.AccessTokenData;
 import com.android.bigserj.data.entity.Profile;
+import com.android.bigserj.data.entity.RegisterData;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -73,6 +75,14 @@ public class RestService {
 
     public Observable<Void> editProfile(Profile profile){
         return restApi.editProfile(profile.getId().toString(),profile);
+    }
+
+
+    public Observable<AccessTokenData> register(RegisterData registerData){
+        // заменить на реальный вызов
+        AccessTokenData accessTokenData = new AccessTokenData();
+        accessTokenData.setAccessToken("feergr");
+        return Observable.just(accessTokenData);
     }
 
 }

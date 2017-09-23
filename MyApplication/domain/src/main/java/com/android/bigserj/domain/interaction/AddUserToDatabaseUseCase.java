@@ -1,7 +1,6 @@
 package com.android.bigserj.domain.interaction;
 
 import com.android.bigserj.data.database.DatabaseManager;
-import com.android.bigserj.data.dbEntity.Country;
 import com.android.bigserj.domain.entity.AddUser;
 import com.android.bigserj.domain.interaction.base.UseCase;
 import io.reactivex.Observable;
@@ -22,7 +21,7 @@ public class AddUserToDatabaseUseCase extends UseCase<AddUser, Void>{
                 databaseManager.insertUser(convert(param.getUser()));
                 databaseManager.close();
             }
-        }).just(null);
+        });
     }
 
     private com.android.bigserj.data.dbEntity.User convert(com.android.bigserj.domain.entity.User user) {

@@ -1,10 +1,22 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'realm-android'
+
 
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.android.bigserj"
+        applicationId "com.android.tasks"  // последнее слово участвует в поиске гуглмаркета
         minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
@@ -12,11 +24,27 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "API_ENDPOINT", '"Task3 BuildConfig works fine"'
     }
+
+//    signingConfigs{
+//        debug{
+//            storeFile file('//Flash/JAVA for ANDROID/TEST_KEY.jks') // тут неправильный путь, кидает ошибку
+//            storePassword 'xxxxxxxxxxx'
+//            keyAlias 'WeatherTratratra'
+//            keyPassword '1111111111'
+//        }
+//    }
+
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+//        debug {
+//            signingConfig signingConfig.debug
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
     }
 
     productFlavors {
@@ -28,16 +56,37 @@ android {
             versionCode 1
             versionName "1.0-pay"
         }
+
+        production {
+            buildConfigField "String", "API_REST", "\"htttp://tut.by/\""
+            versionCode 1
+            versionName "1.0"
+        }
+        developer {
+            buildConfigField "String", "API_REST", "\"htttp://test.tut.by/\""
+            versionCode 1
+            versionName "1.0"
+        }
+
     }
 
-    dataBinding{
-        enabled =true
+    dataBinding {
+        enabled = true
+    }
+
+
+    task loadToFabric(dependsOn: "assembleDeveloperRelease") {
+//    def task = tasks.getByName("crashlyticsUploadDistributionDeveloperRelease")
+//    task.ext.betaDistributionReleaseNotes = ""
+//    task.ext.betaDistributionGroupAliases = ""
+//    task.execute()
     }
 
 
 }
 repositories {
     mavenCentral() // jcenter() works as well because it pulls from Maven Central
+    maven { url 'https://maven.fabric.io/public' }
 }
 
 
@@ -47,22 +96,15 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 //    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:appcompat-v7:26.+'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
+    
 
 //    compile 'com.android.support:design:25.3.1'
 //    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:design:26.+'
-    compile 'com.android.support:support-v4:26.+'
-
+    
 //    picasso
-    compile 'com.squareup.picasso:picasso:2.5.2'
-
+    
     //глайд
-    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
-
+    
 //    Фреско
 //    compile 'com.facebook.fresco:fresco:1.4.0'
 
@@ -72,22 +114,39 @@ dependencies {
 //    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
 
     // датабиндинг (связывание даты) (classwork7)
-    annotationProcessor "com.android.databinding:compiler:2.3.0"
-
+    
 
 
     // RxJava
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'io.reactivex.rxjava2:rxjava:2.1.2'
-
-
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
-
+    // расширение для rx для простой реализации пермишнов
+    
+    
+    // Dagger2
+    //    compile 'javax.inject:javax.inject:1'
 
 
     // подключаем domain
     compile project(path: ':domain')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
 
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.2'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.google.dagger:dagger:2.8'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+    annotationProcessor 'com.android.databinding:compiler:2.3.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.8'
 }

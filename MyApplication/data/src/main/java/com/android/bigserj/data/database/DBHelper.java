@@ -9,7 +9,7 @@ import android.util.Log;
 public class DBHelper extends SQLiteOpenHelper{
 
     public static final String DATABASE_NAME = "test";
-    public static final int VERSION = 0;
+    public static final int VERSION = 1;
 
 
     public DBHelper(Context context) {
@@ -27,8 +27,8 @@ public class DBHelper extends SQLiteOpenHelper{
                 "'countryId' INTEGER)");
 
         db.execSQL("CREATE TABLE country " +
-                "('id' INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "'name' TEXT,");
+                "('id' INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "'name' TEXT)");
 
 
 

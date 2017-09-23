@@ -9,9 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.android.bigserj.R;
+import com.android.bigserj.TestApplication;
 import com.android.bigserj.base.BaseViewModel;
 import com.android.bigserj.domain.entity.ProfileModel;
 import com.android.bigserj.domain.interaction.HomeWork11.GetProfileUseCaseHW11;
+
+import javax.inject.Inject;
 
 import io.reactivex.annotations.NonNull;
 import io.reactivex.observers.DisposableObserver;
@@ -23,6 +26,7 @@ public class HomeWork11ViewModel2 implements BaseViewModel{
     public Activity activity;
     public HomeWork11ViewModel2(Activity activity) {
         this.activity = activity;
+        TestApplication.appComponent.inject2(this);
     }
 
     public enum STATE {PROGRESS, DATA}
@@ -30,12 +34,17 @@ public class HomeWork11ViewModel2 implements BaseViewModel{
 
     public static final String ID_NUMBER = "ID_NUMBER";
 
-    private GetProfileUseCaseHW11 getProfileUseCaseHW11 = new GetProfileUseCaseHW11();
+
+
+    @Inject
+    public GetProfileUseCaseHW11 getProfileUseCaseHW11;
+
+//    private GetProfileUseCaseHW11 getProfileUseCaseHW11 = new GetProfileUseCaseHW11();
 
     public ObservableField<String> name = new ObservableField<>();
     public ObservableField<String> sureName = new ObservableField<>();
-    public ObservableField<Integer> age = new ObservableField<>();
 
+    public ObservableField<Integer> age = new ObservableField<>();
 
 
     @Override

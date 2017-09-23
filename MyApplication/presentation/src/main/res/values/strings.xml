@@ -27,7 +27,11 @@
     <string name="hw10">hw10</string>
     <string name="hw11">hw11</string>
     <string name="hw13">hw13</string>
+    <string name="hw15">hw15</string>
     <string name="cw14">cw14</string>
+    <string name="cw16">cw16</string>
+    <string name="cw18">cw18</string>
+    <string name="cw21">cw21</string>
     <string name="url">https://goo.gl/oaZVyX</string>
     <string name="strangebutton">strangeButton</string>
     <string name="cw4">cw4</string>
@@ -37,6 +41,7 @@
     <!--HomeWork7-->
     <string name="female">Женщина</string>
     <string name="male">Мужчина</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

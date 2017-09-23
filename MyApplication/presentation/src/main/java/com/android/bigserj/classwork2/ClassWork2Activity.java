@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.android.bigserj.R;
+import com.android.bigserj.classwork22.MapsActivity;
 import com.android.bigserj.homework1.MainActivity;
 
 
@@ -27,9 +28,14 @@ public class ClassWork2Activity extends Activity{
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ClassWork2Activity.this,com.android.bigserj.homework1.MainActivity.class);
-                intent.putExtra(MainActivity.KEY_USERNAME,username.getText().toString());
-                intent.putExtra(MainActivity.KEY_PASSWORD,password.getText().toString());
+//                Intent intent = new Intent(ClassWork2Activity.this,com.android.bigserj.homework1.MainActivity.class);
+//                intent.putExtra(MainActivity.KEY_USERNAME,username.getText().toString());
+//                intent.putExtra(MainActivity.KEY_PASSWORD,password.getText().toString());
+//                startActivity(intent);
+
+                // урок 22  googlemaps
+
+                Intent intent = new Intent(ClassWork2Activity.this,MapsActivity.class);
                 startActivity(intent);
             }
         });

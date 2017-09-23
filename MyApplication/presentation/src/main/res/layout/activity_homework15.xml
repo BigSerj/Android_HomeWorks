@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9bff49"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextHW15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Info" />
+
+    <Button
+        android:id="@+id/buttonHW15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/editText2HW15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Info" />
+
+    <Button
+        android:id="@+id/button2HW15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get by this ID" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/colorLightRed"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editTextIdHW15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="userId" />
+
+        <TextView
+            android:id="@+id/editTextNameUserHW15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="userName" />
+
+        <TextView
+            android:id="@+id/editTextAgeHW15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="userAge" />
+
+        <TextView
+            android:id="@+id/editTextCountryHW15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CountryId" />
+
+        <TextView
+            android:id="@+id/editTextNameCountryHW15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CountryName" />
+
+    </LinearLayout>
+
+</LinearLayout>

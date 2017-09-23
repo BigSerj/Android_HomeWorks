@@ -21,6 +21,7 @@ android {
 }
 
 dependencies {
+    testCompile 'junit:junit:4.12'
 
 
     // RxJava
@@ -30,6 +31,9 @@ dependencies {
     // подключаем data
     compile project(path: ':data')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // Dagger2
+    compile 'javax.inject:javax.inject:1'
 }
 repositories {
     mavenCentral()

@@ -3,7 +3,7 @@ package com.android.bigserj.domain.entity;
 
 import android.content.Context;
 
-public class AddUser {
+public class GetUser {
 
     private Context context;
     private User user;
@@ -23,4 +23,5 @@ public class AddUser {
     public void setUser(User user) {
         this.user = user;
     }
+
 }
