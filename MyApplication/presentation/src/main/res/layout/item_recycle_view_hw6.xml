@@ -18,7 +18,7 @@
         android:layout_gravity="center"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView1"
         android:layout_gravity="center_vertical"
         android:background="#ff6565"
         android:layout_width="match_parent"

@@ -62,7 +62,7 @@ public class ClassWork6Adapter extends RecyclerView.Adapter<ClassWork6Adapter.Ho
         public Holder(View itemView) {
             super(itemView);
 
-            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            imageView = (ImageView) itemView.findViewById(R.id.imageView1);
             textView = (TextView) itemView.findViewById(R.id.textView);
         }
     }

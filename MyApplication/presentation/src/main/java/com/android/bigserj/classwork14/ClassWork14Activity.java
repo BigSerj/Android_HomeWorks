@@ -29,8 +29,8 @@ public class ClassWork14Activity extends FragmentActivity{
     Button button;
 
     SharedPreferences sharedPreferences;
-    private static final String SHARED_PREFERENCES_NAME = "defr";
-    private static final String KEY_NAME = "KEY_NAME";
+    public static final String SHARED_PREFERENCES_NAME = "defr";
+    public static final String KEY_NAME = "KEY_NAME";
 
     public static void show(Activity activity){
         Intent intent = new Intent(activity, ClassWork14Activity.class);
