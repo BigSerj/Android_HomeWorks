@@ -13,6 +13,7 @@ import com.android.bigserj.classWork18.ClassWork18Activity;
 import com.android.bigserj.classWork21.RegisterActivity;
 import com.android.bigserj.classwork14.ClassWork14Activity;
 import com.android.bigserj.classwork15.HomeWork15Activity;
+import com.android.bigserj.classwork22.ClassWork22Activity;
 import com.android.bigserj.homeWork13.HomeWork13Activity;
 import com.android.bigserj.classWork12.ClassWork12Activity;
 import com.android.bigserj.classWork13.ClassWork13Activity;
@@ -259,6 +260,14 @@ public class MainActivity extends Activity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
+                startActivity(intent);
+            }
+        });
+        Button cw22Button = (Button)findViewById(R.id.cw22_button);
+        cw22Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClassWork22Activity.class); // объект, который выполняет для нас что-либо (намерения, наприме, перейти куда-либо или открыт что-то)
                 startActivity(intent);
             }
         });

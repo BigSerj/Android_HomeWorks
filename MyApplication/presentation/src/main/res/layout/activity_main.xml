@@ -210,6 +210,12 @@
             android:layout_height="@dimen/main_button_size_y"
             android:text="@string/cw21"
             android:textSize="13sp" />
+        <Button
+            android:id="@+id/cw22_button"
+            android:layout_width="@dimen/main_button_size_x"
+            android:layout_height="@dimen/main_button_size_y"
+            android:text="cw22"
+            android:textSize="13sp" />
 
 
     </LinearLayout>

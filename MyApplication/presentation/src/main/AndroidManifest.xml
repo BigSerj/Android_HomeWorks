@@ -57,6 +57,7 @@
         <activity android:name=".classWork4.ClassWork4Activity" />
         <activity android:name=".classWork3.ClassWork3Activity" />
         <activity android:name=".classwork2.ClassWork2Activity" />
+        <activity android:name=".classwork22.ClassWork22Activity" />
         <activity android:name=".classwork22.MapsActivity" />
 
         <!-- <receiver android:name=".ClassWork5.MyBroadcastReceiver"> -->
@@ -77,13 +78,13 @@
 
         <service android:name=".homeWork5.MyServiceHomeWork5" />
 
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCPwWrOptdYxfhwMmFYT5p4_ITZzo7YZB8"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBcZlQjk3JoF2rWOPW2mv9q8ky6EIEM2hw"/>
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="a3b6eb242e6251209f0ef48e8e8f510f4b1b6642" />
